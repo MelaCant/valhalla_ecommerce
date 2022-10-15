@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins',sans-serif;
+}
+
+/* HEADER */
+
+.anuncio_menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.6rem;
+    color: rgb(0, 0, 0);
+    font-weight:bold;
+    background-color: rgb(225, 188, 214); 
+}
+
+.anuncio_menu p{
+    padding: 8px;
+    margin: 0px;
+}
+
+.container_header{
+    background-color: rgb(0, 0, 0);
+}
+
+.envios{
+    font-size: 17px;
+}
+
+.icono_instagram{
+    font-size: 50px;
+}
+
+/* PRINCIPAL */
+
+.imagen_principal{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* PRODUCTOS */
+
+#contenedor-productos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    font-family: 'Poppins',sans-serif;
+    background-color: #0000;
+}
+  
+.card h3{
+    justify-self: center;
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin: 15px 0.4rem 0 0.4rem;
+    color: rgb(255, 255, 255);
+}
+
+.card img{
+    width: auto;
+    height: 280px;
+}
+
+.card p {
+    color: #fff;
+}
+
+/* CARRITO */
+
+#boton-carrito:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(66, 74, 97);
+}
+
+#boton-carrito:focus {
+    outline: none;
+}
+
+#boton-carrito{
+    background-color: #0000;
+    padding: 5px 10px;
+}
+
+.precioProducto{
+    font-weight: 700;
+    font-size: 16px;
+    margin: 20px 8px;
+}
+
+.boton-agregar {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    background-color: rgb(222, 135, 196);
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: 'Poppins',sans-serif;
+    padding-top: 5px;
+}
+
+.boton-agregar:hover {
+    cursor: pointer;
+}
+.boton-agregar:focus {
+    outline: none;
+}
+
+/* MODAL */
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 350px;
+    padding: 8px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: rgb(140, 148, 172);
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+    
+}
+
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}
+
+#finalizarCompra{
+    width: 60%;
+    background-color: #82BB43;
+}
+
+
+/* CONTACTO */
+
+form, form button{
+    width: 100%;
+}
+
+.form-label, .form-check-label{
+    font-size: 13px!important;
+}
+
+.form-control{
+    border-radius: 0!important;
+}
+
+
+/* FOOTER */
+.small{
+    font-size: 15px;
+}
+
+.social{
+    color: #ffff;
+}
+
+.social:hover{
+    color: rgb(237, 101, 196);
+}
+
+/* WHATSAPP */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.swal2-popup {
+    font-size: 14px !important;
+    font-family: Georgia, serif;
+    width: '500',
+}

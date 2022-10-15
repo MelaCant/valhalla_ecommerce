@@ -1,0 +1,67 @@
+ 
+[
+    {
+        "id":1,
+        "nombre": "Remera Baby",
+        "precio": "5100",
+        "descripcion": "Remera Baby",
+        "imagen": "../img/remera(1).jpg",
+        "cantidad": 1
+    },
+    {
+        "id":2,
+        "nombre": "Remera Smoke",
+        "precio": "3700",
+        "descripcion": "Remera Smoke",
+        "imagen": "../img/remera(2).jpg",
+        "cantidad": 1
+    },
+    {
+        "id":3,
+        "nombre": "Camisa vintage",
+        "precio": "6000",
+        "descripcion": "Camisa vintage",
+        "imagen": "../img/remera(3).jpg",
+        "cantidad": 1
+    },
+    {
+        "id":4,
+        "nombre": "Remera Valhalla",
+        "precio": "7500",
+        "descripcion": "Remera Valhalla",
+        "imagen": "../img/remera(4).jpg",
+        "cantidad": 1
+    },
+    {
+        "id":5,
+        "nombre": "Remera volados Bones",
+        "precio": "5500",
+        "descripcion": "Remera volados Bones",
+        "imagen": "../img/remera(5).jpg",
+        "cantidad": 1
+    },
+    {
+        "id":6,
+        "nombre": "Camisa nudo",
+        "precio": "8500",
+        "descripcion": "Camisa nudo",
+        "imagen": "../img/remera(6).jpg",
+        "cantidad": 1
+    },
+    {
+        "id":7,
+        "nombre": "Musculosa básica",
+        "precio": "6400",
+        "descripcion": "Musculosa básica",
+        "imagen": "../img/remera(7).jpg",
+        "cantidad": 1
+    },
+    {
+        "id":8,
+        "nombre": "Musculosa tiras blanca",
+        "precio": "6500",
+        "descripcion": "Musculosa tiras blanca",
+        "imagen": "../img/remera(8).jpg",
+        "cantidad": 1
+    }
+]

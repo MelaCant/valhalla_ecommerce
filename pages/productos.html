@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bienvenidos a la tienda online de VALHALLA ADVENTURE. Hacé tu pedido, pagalo online y recibilo donde quieras.">
+        <meta name="keywords" content="VALHALLA ADVENTURE, indumentaria mujer, moda, ropa">
+        <meta name="copyright" content="Melina Canteros">
+        <meta name="author" content="Melina Canteros">
+        <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png"/>
+        <script src="https://kit.fontawesome.com/b1cb661ecf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Tienda Online | Valhalla Store</title>
+        <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+        <script defer src="../js/carrito.js"></script>
+        <script defer src="../js/modal.js"></script>
+        <script defer src="../js/main.js"></script>
+    </head>
+    <body>
+        <div class="anuncio_menu">
+            <p>SHOP NOW : 3 CUOTAS SIN INTERES ₊˚♡˚₊</p>
+        </div>
+        <header>
+            <!-- Comienza NavBar -->
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 p-0">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+                            <div class="container-fluid py-2 px-3 container_header">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>                       
+                                <div class="collapse navbar-collapse mx-lg-4 px-lg-4" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active p-2 pt-lg-4 px-lg-4" aria-current="page" href="../index.html">HOME</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-2 pt-lg-4 px-lg-4" href="./productos.html">TIENDA</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-2 pt-lg-4 px-lg-4" href="./contacto.html">CONTACTO</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="px-2 mx-lg-4">
+                                    <a href="../index.html"><img src="../img/logo_mobile.png" alt="logo"></a>
+                                    
+                                </div>
+                                <div class="px-2 mx-lg-4">
+                                    <button id="boton-carrito"><i class="fas fa-shopping-cart text-white"></i><span id="contadorCarrito" class="p-1 text-white">0</span></button>   
+                                </div>
+                            </div>
+                        </nav>           
+                    </div>
+                </div>
+            </div>
+        </header>   
+        <main>
+            <section id="contenedor-productos" class="my-4 px-lg-4">
+            </section>
+
+            <div class="container d-flex justify-content-center my-3">
+                <a href="../index.html"><button class="boton-agregar my-4">VOLVER</button></a>
+            </div> 
+
+            <section class="modal-contenedor">
+                <div class="modal-carrito">
+                    <h3>Carrito</h3>
+                    <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                    <div id="carrito-contenedor">
+                    </div>
+                    <button id="vaciar-carrito" class="boton-agregar my-2">Vaciar carrito</button>
+                    <p class="precioProducto pt-4">Precio total: $<span id="precioTotal">0</span></p>
+                    <br>
+                    <div class="container d-flex justify-content-center">
+                        <button id="finalizarCompra" class="boton-agregar">Finalizar compra</button>
+                    </div>  
+                </div>
+            </section>
+        </main>
+         <!-- Footer -->
+         <footer class="text-center text-lg-start bg-dark text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom">  
+                <a>
+                    <i class="fa-brands fa-facebook-f px-3 social"></i>
+                </a>
+                <a>
+                    <i class="fab fa-twitter px-3 social"></i>
+                </a>
+                <a>
+                    <i class="fab fa-google px-3 social"></i>
+                </a>
+                <a href="https://instagram.com/mela.cant?r=nametag">
+                    <i class="fab fa-instagram px-3 social"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/melinacanteros/">
+                    <i class="fab fa-linkedin px-3 social"></i>
+                </a>
+                <a href="https://github.com/MelaCant" target="_blank">
+                    <i class="fab fa-github px-3 social"></i>
+                </a> 
+            </section>
+            <!-- Section: Social media -->
+            <section>
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-white">
+                            <h6 class="mb-3 small">
+                                VALHALLA STORE
+                            </h6>
+                        </div>
+                
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="fw-bold mb-4 text-white small">
+                            MEDIOS DE PAGO 
+                            </h6>
+                            <i class="fa-brands fa-cc-visa text-white p-1"></i>
+                            <i class="fa-brands fa-cc-mastercard text-white p-1"></i>
+                            <i class="fa-brands fa-cc-amex text-white p-1"></i>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <a href="./contacto.html" class="text-decoration-none"><h6 class="text-uppercase fw-bold mb-3 text-decoration-none text-white small">Contacto</h6></a>
+                            <p class="m-1 text-white envios small"><i class="fas fa-home m-1 text-white small"></i> Av de Mayo 1420, CABA</p>
+                            <p class="m-1 text-white envios small">
+                            <i class="fas fa-envelope me-3 text-white"></i>
+                            info@valhalla.com
+                            </p>
+                            <p class="m-1 text-white envios small"><i class="fa-brands fa-whatsapp"></i> + 011 567 89</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Copyright -->
+            <div class="text-center p-3 text-white envios small" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2022 Copyright: Melina Canteros
+            </div>
+        </footer>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=1164412655&text=Hola!%20Sean%20bienvenidos." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+        <script src="../js/bootstrap.bundle.min.js"></script> 
+    </body>
+</html>
